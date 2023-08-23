@@ -1,0 +1,44 @@
+COMANDOS BASICOS
+•	Ls = listar pastas e arquivos no diretório atual
+•	cd .\nome pasta = Entrar na pasta
+•	echo “conteúdo” > nomearquivo.extensao = criar arquivo e conteúdo
+•	rm -r .\nomearquivo.extensao = excluir arquivo ou pasta
+•	cls = limpar tela
+•	code . = dentro da pasta do git digitando este código irá abrir o VSCode
+COMANDOS GIT
+•	git init . = criar repositório git
+•	git status = verificar quais arquivos do diretório estão no stage
+•	git add .\nomearquivo.extensao = adicionar arquivo no stage
+•	git rm –cached .\nomearquivo.extensao = remover arquivo do stage
+
+•	git commit = para adicionar os arquivos do stage no commit (dentro do commit para sair do editor apertar ESC e depois digitar :wq e dar ENTER)
+•	git commit -m “mensagem” = commita o que está no stage e adiciona a mensagem em seguida
+
+•	git log = para ver histórico de commits e mensagens sobre cada um deles
+•	git log -n 2 = aparece somente a quantidade commits de acordo com o número no código
+•	git log –oneline = git resumido em uma linha.
+•	git log –stat = histórico de commit e tamanho da adição.
+•	git log –stat –oneline = adicionando dois comandos de uma vez.
+
+•	git checkout .\nomearquivo.extensao = desfazer modificação de algum arquivo que esteja no stage.
+•	git revert HEAD ‘codigo do commit’ = irá reverter o commit indicado.
+
+•	git branch = para verificar as branchs que temos disponíveis.
+•	git checkout master = para direcionar para a branch master as modificações.
+•	git branch nome_branch = para criar uma nova branch.
+•	git branch -b nome_branch = para criar uma nova branch e mudar para ela
+•	git branch branch-c master = fara com que a branch-c seja uma cópia da master
+•	git branch -D branch-a = para deletar a branch
+
+•	git merge nome_branch = para unir a branch denominada a branch master
+
+•	git push = para enviar os arquivos commitados para o github
+•	git push origin nome_branch = mandar branch para repositorio remoto
+
+•	git pull = para baixar do github para o meu repositório local
+
+•	git clone link -l nome_pasta = para baixar um repositório da internet através de um link do github
+
+No Visual Studio, aperte F1, digite “create new terminal” = para abrir um terminal PowerShell dentro do VSCode
+No Visual Studio, aperte F1, digite “git history (git log)” = para verificar o histórico de commits dentro do VSCode
+No Visual Studio, aperte F1, digite “Mark Down View” = para visualizar o arquivo changelog.md
